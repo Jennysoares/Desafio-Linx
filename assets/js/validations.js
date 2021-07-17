@@ -19,3 +19,6 @@ function validations() {
     alert("CPF Inválido");
 }
 
+function openMail() {
+    window.open("email.html");
+  }
