@@ -24,7 +24,7 @@ O projeto possui 3 arquivos HTML:
  
  -> E 1 arquivo PHP para que possa ser informado no servidor qual página será iniciada. 
 
-### Funcionamento
+## Funcionamento
 
 * Para fazer o projeto funcionar é necessário:
 * Fazer um clone do projeto através do comando "git clone https://github.com/Jennysoares/Desafio-Linx.git"
