@@ -30,24 +30,26 @@
         </div>
         <div class="row header-buttons">
           <div class="col-md ">
-            <button type="button">Conheça a Linx</button>
+            <a href="https://www.linx.com.br/" target="_blank"><button type="button">Conheça
+              a Linx</button></a>
           </div>
           <div class="col-md ">
-            <button type="button">Ajude o algoritmo</button>
+            <a href="#algoritm-section"><button type="button">Ajude o
+              algoritmo</button></a>
           </div>
         </div>
         <div class="row header-buttons">
           <div class="col-md ">
-            <button type="button">Seus Produtos</button>
+            <a href="#products-section"><button type="button">Seus Produtos</button></a>
           </div>
           <div class="col-md ">
-            <button type="button">Compartilhe</button>
+            <a href="#contact-friend"><button type="button">Compartilhe</button></a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="algoritm-section">
+    <div class="algoritm-section" id="algoritm-section">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -81,11 +83,11 @@
             <form class="contact-form" method="POST"
               onsubmit="validations()">
               <label for="name_contact">Seu nome:</label><br>
-              <input type="text" id="name_contact" name="fname"><br>
+              <input type="text" id="name_contact" required><br>
               <label for="email_contact">E-mail:</label><br>
-              <input type="email" id="email_contact" name="lname">
+              <input type="email" id="email_contact" required>
               <label for="cpf_contact">CPF:</label><br>
-              <input type="text" id="cpf_contact" name="lname">
+              <input type="text" id="cpf_contact" required> 
               <input type="radio" class="radio" name="masculino"
                 value="m" id="radioM" />
               <label for="radioM">Masculino</label>
@@ -99,7 +101,7 @@
       </div>
     </div>
 
-    <div class="products-section">
+    <div class="products-section" id="products-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -116,38 +118,41 @@
         <div class="separator">Compartilhe a novidade</div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div class="header-text caption">
-            <span>Quer que seus amigos também ganhem a lista
-              personalizada deles? Preencha agora!</span>
-            <div id="search-section">
-              <form class="form_friend" method="POST">
-                <div class="row">
-                  <div class="col">
-                    <label for="name_friend">Nome do seu amigo:</label><br>
-                    <input type="text" id="name_friend" name="fname">
+    
+    <div id="contact-friend">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="header-text caption">
+              <span>Quer que seus amigos também ganhem a lista
+                personalizada deles? Preencha agora!</span>
+              <div id="search-section">
+                <form class="form_friend" method="POST" action="email.html">
+                  <div class="row">
+                    <div class="col">
+                      <label for="name_friend">Nome do seu amigo:</label><br>
+                      <input type="text" id="name_friend" name="fname" required>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="email_friend">E-mail:</label><br>
-                    <input type="email" id="email_friend" name="fname">
+                  <div class="row">
+                    <div class="col">
+                      <label for="email_friend">E-mail:</label><br>
+                      <input type="email" id="email_friend" name="fname" required>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <button type="submit">Enviar</button>
+                  <div class="row">
+                    <div class="col">
+                      <button type="submit">Enviar</button>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
     <footer>
       <div class="container">
