@@ -30,7 +30,7 @@ O projeto possui 3 arquivos HTML:
 * Fazer um clone do projeto através do comando "git clone https://github.com/Jennysoares/Desafio-Linx.git"
 * Após isso só é iniciar o servidor e navegar pela aplicação. (É neccessário o servidor para que o fetch do produtos funcione.)
 
-### Live Preview
+## Live Preview
 -> https://desafio-linx-xi.vercel.app/
 
 
