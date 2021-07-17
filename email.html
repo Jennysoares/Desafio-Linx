@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Email template</title>
+
+    <link rel="stylesheet" href="assets/css/email.css">
+  </head>
+
+  <body bgcolor="#F5F8FA" onload="loadJSON('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1', 2)">
+
+    <div id="email">
+      <table role="presentation" width="100%">
+        <tr>
+          <td bgcolor="#707070" align="center" style="color: white;">
+            <div class="header-text caption">
+              <h3>uma seleção de produtos</h3>
+              <h1>especial para você</h1>
+              <h5>Todos os produtos desta lista foram selecionados a partir
+                da sua navegação. Aproveite!</h5>
+            </div>
+          </td>
+        </table>
+
+        <table role="presentation" border="0" cellpadding="0"
+          cellspacing="10px" class="header-text">
+          <tr>
+            <td>
+              <h4> Olá, Fulano</h4>
+              <p>
+                Fizemos uma lista especial de produtos apenas para você. Isso
+                mesmo: nesta lista temos só produtos que você pode gostar. Seu
+                amigo Ciclano lhe recomendou essa lista especial. Olha só:
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table role="presentation" border="0" cellpadding="0"
+          cellspacing="10px" width="100%" class="products">
+          <tr id="productsAll">
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+               <button style="margin-top:20px"> Tem muito mais aqui. Vem ver! </button> 
+            </td>
+          </tr>
+        </table>
+
+        <table role="presentation" bgcolor="#707070" width="100%">
+          <tr>
+            <td align="center" class="footer">
+              <p>Testando suas habilidades em HTML, CSS e JS</p>
+              <p>Linx Impulse</p>
+              <p>2019</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <script src="assets/js/productsEmail.js"></script>
+
+    </body>
+  </html>
